@@ -1,0 +1,27 @@
+body {
+    margin: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    height: 640px;
+    margin: 0;
+    padding: 0;
+    aspect-ratio: var(--width)/var(--height);
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    background-color: #fff;
+}
+
+.grid {
+    width: calc(100%/var(--width));
+    box-sizing: border-box;
+    border: 0.5px solid #000;
+    &:hover {
+        background-color: var(--grey1);
+    }
+}
